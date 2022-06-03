@@ -10,6 +10,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Info from "./pages/Info";
 
+
+
+
 function App() {
   return (
     <div className="App">
