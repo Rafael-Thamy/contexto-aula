@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 //import do Contexto
 import { CounterContextProvider } from "./context/CounterContext";
+import { TitleColorContextProvider } from "./context/TitleColorContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +14,9 @@ root.render(
     {/* abraçar todos os componentes que estarão dentro de App, por meio da prop children.
     Aqui temos a criação do provider */}
     <CounterContextProvider>
-      <App />
+      <TitleColorContextProvider>
+        <App />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>
 );

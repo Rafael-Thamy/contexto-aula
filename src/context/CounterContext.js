@@ -11,6 +11,7 @@ contexto com os demais componentes */
 //o children serve para encapsular elementos e continuar exibindo o conteudo deles dentro de outros elementos
 export const CounterContextProvider = ({ children }) => {
   const [counter, setCounter] = useState(5);
+  //dentro do provider temos os componentes que poderão usar os dados do contexto
   return (
       <CounterContext.Provider value={{counter, setCounter}}>
           {children}
